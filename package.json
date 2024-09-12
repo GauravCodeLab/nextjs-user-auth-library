@@ -2,25 +2,44 @@
   "name": "nextjs-auth-library",
   "version": "0.1.0",
   "private": true,
+  "main": "dist/index.js", 
+  "types": "dist/index.d.ts", 
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "prepublishOnly": "tsc"
   },
   "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cookie": "^0.6.0",
+    "express": "^4.21.0",
+    "http-proxy-middleware": "^3.0.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.6.2",
+    "next": "14.2.10",
     "react": "^18",
-    "react-dom": "^18",
-    "next": "14.2.10"
+    "react-dom": "^18"
   },
   "devDependencies": {
-    "typescript": "^5",
+    "@types/bcryptjs": "^2.4.6",
+    "@types/cookie": "^0.6.0",
+    "@types/express": "^4.17.21",
+    "@types/jsonwebtoken": "^9.0.6",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
+    "eslint": "^8",
+    "eslint-config-next": "14.2.10",
     "postcss": "^8",
     "tailwindcss": "^3.4.1",
-    "eslint": "^8",
-    "eslint-config-next": "14.2.10"
-  }
+    "typescript": "^5"
+  },
+  "keywords": [
+    "nextjs",
+    "authentication",
+    "jwt",
+    "login"
+  ]
 }
